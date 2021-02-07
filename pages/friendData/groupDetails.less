@@ -1,0 +1,123 @@
+.group{
+	height: auto;
+  background: #F2F2F2;
+  overflow: hidden;
+}
+
+.group-head{
+  padding-top: 32upx;
+  background: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  text-align: center;
+  .head-items{
+    margin: 0 20upx;
+    width: 100upx;
+    image{
+      width: 100upx;
+      height: 100upx;
+      border-radius: 5px;
+    }
+    .head-name{
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow:ellipsis;
+      margin-bottom: 40upx;
+      text{
+        height: 30upx;
+        font-size: 22upx;
+        font-family: PingFang SC;
+        font-weight: 400;
+        line-height: 30upx;
+        color: #666;
+      }
+    }
+  }
+}
+
+.group-more{
+  background-color: #fff;
+  text-align: center;
+  padding-bottom: 30upx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #333333;
+  image{
+    width: 24upx;
+    height: 26upx;
+	margin-left: 6rpx;
+	margin-top: 2rpx;
+  }
+}
+
+.group-box{
+    margin-top: 20upx;
+    background: #fff;
+	padding: 0 32rpx;
+    .group-row{
+      height: 110upx;
+      display: flex;
+      justify-content:space-between;
+      // &::after{
+      //   position: absolute;
+      //   right: 0;
+      //   bottom: 0;
+      //   left: 32upx;
+      //   height: 2px;
+      //   content: '';
+      //   -webkit-transform: scaleY(.5);
+      //   transform: scaleY(.5);
+      //   background-color: #E6E6E6;
+      // }
+      .group-row-tit{
+        height: 45upx;
+        font-size: 32upx;
+        font-family: PingFang SC;
+        font-weight: 400;
+        line-height: 110upx;
+        color: #333;
+        height: 110upx;
+      }
+      .group-row-info{
+        display: flex;
+        align-items: center;
+        height: 45upx;
+        font-size: 32upx;
+        font-family: PingFang SC;
+        font-weight: 400;
+        line-height: 110upx;
+        height: 110upx;
+        color: #666;
+        text{
+          height: 45upx;
+          font-size: 32upx;
+          font-family: PingFang SC;
+          font-weight: 400;
+          line-height: 45upx;
+          color: #666;
+        }
+        image{
+          width: 14upx;
+          height: 24upx;
+          margin-left: 24upx;
+        }
+      }
+    }
+}
+
+.group-logout{
+  background: #fff;
+  margin-top: 20upx;
+  line-height: 110upx;
+  text-align: center;
+  text{
+    height: 45upx;
+    font-size: 32upx;
+    font-family: PingFang SC;
+    font-weight: 500;
+    line-height: 110upx;
+    color: #FD3B31;
+  }
+}

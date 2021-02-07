@@ -1,0 +1,241 @@
+[{
+    "image": "/static/face/jaixin.gif",
+    "name": "[爱心]"
+  },
+  {
+    "image": "/static/face/jbaituo.gif",
+    "name": "[拜托]"
+  },
+  {
+    "image": "/static/face/jbishi.gif",
+    "name": "[鄙视]"
+  },
+  {
+    "image": "/static/face/jbizui.gif",
+    "name": "[闭嘴]"
+  },
+  {
+    "image": "/static/face/jchengzan.gif",
+    "name": "[称赞]"
+  },
+  {
+    "image": "/static/face/jdaji.gif",
+    "name": "[打击]"
+  },
+  {
+    "image": "/static/face/jdaku.gif",
+    "name": "[大哭]"
+  },
+  {
+    "image": "/static/face/jdangao.gif",
+    "name": "[蛋糕]"
+  },
+  {
+    "image": "/static/face/jdaxiao.gif",
+    "name": "[大笑]"
+  },
+  {
+    "image": "/static/face/jemo.gif",
+    "name": "[emoji]"
+  },
+  {
+    "image": "/static/face/jfankun.gif",
+    "name": "[犯困]"
+  },
+  {
+    "image": "/static/face/jfeiwen.gif",
+    "name": "[飞吻]"
+  },
+  {
+    "image": "/static/face/jfendou.gif",
+    "name": "[奋斗]"
+  },
+  {
+    "image": "/static/face/jfennu.gif",
+    "name": "[愤怒]"
+  },
+  {
+    "image": "/static/face/jganbei.gif",
+    "name": "[干杯]"
+  },
+  {
+    "image": "/static/face/jgoushou.gif",
+    "name": "[勾手]"
+  },
+  {
+    "image": "/static/face/jgouwuche.gif",
+    "name": "[购物车]"
+  },
+  {
+    "image": "/static/face/jguilian.gif",
+    "name": "[鬼脸]"
+  },
+  {
+    "image": "/static/face/jhaixiu.gif",
+    "name": "[害羞]"
+  },
+  {
+    "image": "/static/face/jhanxiao.gif",
+    "name": "[憨笑]"
+  },
+  {
+    "image": "/static/face/jguzhang.gif",
+    "name": "[鼓掌]"
+  },
+  {
+    "image": "/static/face/jheixian.gif",
+    "name": "[黑线]"
+  },
+  {
+    "image": "/static/face/jhongbao.gif",
+    "name": "[红包]"
+  },
+  {
+    "image": "/static/face/jhuimie.gif",
+    "name": "[毁灭]"
+  },
+  {
+    "image": "/static/face/jhuishou.gif",
+    "name": "[挥手]"
+  },
+  {
+    "image": "/static/face/jhuizhang.gif",
+    "name": "[徽章]"
+  },
+  {
+    "image": "/static/face/jjizhang.gif",
+    "name": "[击掌]"
+  },
+  {
+    "image": "/static/face/jkongju.gif",
+    "name": "[恐惧]"
+  },
+  {
+    "image": "/static/face/jkoushui.gif",
+    "name": "[口水]"
+  },
+  {
+    "image": "/static/face/jlazhu.gif",
+    "name": "[蜡烛]"
+  },
+  {
+    "image": "/static/face/jliwu.gif",
+    "name": "[礼物]"
+  },
+  {
+    "image": "/static/face/jmaohan.gif",
+    "name": "[冒汗]"
+  },
+  {
+    "image": "/static/face/jmeiwei.gif",
+    "name": "[美味]"
+  },
+  {
+    "image": "/static/face/jmimang.gif",
+    "name": "[迷茫]"
+  },
+  {
+    "image": "/static/face/jnanguo.gif",
+    "name": "[难过]"
+  },
+  {
+    "image": "/static/face/jok.gif",
+    "name": "[ok]"
+  },
+  {
+    "image": "/static/face/joutu.gif",
+    "name": "[呕吐]"
+  },
+  {
+    "image": "/static/face/jqingzhu.gif",
+    "name": "[庆祝]"
+  },
+  {
+    "image": "/static/face/jshangxin.gif",
+    "name": "[伤心]"
+  },
+  {
+    "image": "/static/face/jshengbing.gif",
+    "name": "[生病]"
+  },
+  {
+    "image": "/static/face/jshengqi.gif",
+    "name": "[生气]"
+  },
+  {
+    "image": "/static/face/jshihua.gif",
+    "name": "[石化]"
+  },
+  {
+    "image": "/static/face/jshiluo.gif",
+    "name": "[失落]"
+  },
+  {
+    "image": "/static/face/jshuaiku.gif",
+    "name": "[帅酷]"
+  },
+  {
+    "image": "/static/face/jshuijiao.gif",
+    "name": "[睡觉]"
+  },
+  {
+    "image": "/static/face/jtaiyang.gif",
+    "name": "[太阳]"
+  },
+  {
+    "image": "/static/face/jweixiao.gif",
+    "name": "[微笑]"
+  },
+  {
+    "image": "/static/face/jwoquan.gif",
+    "name": "[握拳]"
+  },
+  {
+    "image": "/static/face/jwoshou.gif",
+    "name": "[握手]"
+  },
+  {
+    "image": "/static/face/jwuzui.gif",
+    "name": "[无罪]"
+  },
+  {
+    "image": "/static/face/jxianhua.gif",
+    "name": "[鲜花]"
+  },
+  {
+    "image": "/static/face/jxiaoku.gif",
+    "name": "[笑哭]"
+  },
+  {
+    "image": "/static/face/jxuanyun.gif",
+    "name": "[眩晕]"
+  },
+  {
+    "image": "/static/face/jye.gif",
+    "name": "[耶]"
+  },
+  {
+    "image": "/static/face/jyiwen.gif",
+    "name": "[疑问]"
+  },
+  {
+    "image": "/static/face/jzaijian.gif",
+    "name": "[再见]"
+  },
+  {
+    "image": "/static/face/jzhaocai.gif",
+    "name": "[招财]"
+  },
+  {
+    "image": "/static/face/jzhishang.gif",
+    "name": "[指上]"
+  },
+  {
+    "image": "/static/face/jzhiyou.gif",
+    "name": "[指右]"
+  },
+  {
+    "image": "/static/face/jzhuanye.gif",
+    "name": "[专业]"
+  }
+]

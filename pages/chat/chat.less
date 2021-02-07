@@ -1,0 +1,760 @@
+page{
+  background-color: #F2F2F2;
+}
+//导航栏样式start
+.chat-head{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 88upx;
+  image{
+    width: 40upx;
+    height: 40upx;
+  }
+  text{
+    height: 50upx;
+    font-size: 36upx;
+    font-family: PingFang SC;
+    font-weight: bold;
+    line-height: 50upx;
+    color: #333;
+  }
+}
+//导航栏样式end
+
+//表情包样式start
+	.face-box-wapper {
+		position: fixed;
+		z-index: 999;
+		left: 0;
+		bottom: 0;
+		right: 0;
+		height: 400upx;
+
+		&.more {
+			height: 260upx;
+		}
+    .delete-box{
+      position: absolute;
+      right: 0upx;
+      bottom: 0upx;
+      background-color: #fff;
+      z-index: 999;
+      padding: 0 40upx;
+      border-radius: 5px;
+      .delete{
+        width: 70upx;
+        height: 70upx;
+        // padding: 50upx;
+      }
+    }
+
+		.face-box-mask {
+			position: fixed;
+			left: 0;
+			bottom: 0;
+			right: 0;
+			top: 0;
+			z-index: 99;
+		}
+
+		.face-box {
+			position: fixed;
+			z-index: 999;
+			left: 0;
+			bottom: 0;
+			right: 0;
+			height: 400upx;
+			background-color: #fff;
+			text-align: justify;
+			padding: 0 15upx;
+
+			image {
+				width: 70upx;
+				height: 70upx;
+				padding: 10upx;
+			}
+      /deep/.uni-scroll-view,/deep/.uni-scroll-view-content{
+        width: 100%;
+        height: 100%;
+        padding-bottom: 120upx;
+      }
+		}
+
+		.more-box {
+			position: fixed;
+			z-index: 999;
+			left: 0;
+			bottom: 0;
+			right: 0;
+			height: 220upx;
+			background-color: #f7f7f7;
+			display: flex;
+			align-items: center;
+			padding: 0 30upx;
+
+			&:before {
+				content: '';
+				position: absolute;
+				z-index: 0;
+				top: 0;
+				left: 0;
+				width: 100%;
+				border-top: 1px solid #eee;
+				-webkit-transform: scaleY(.5);
+				transform: scaleY(.5);
+				-webkit-transform-origin: 0 0;
+				transform-origin: 0 0;
+			}
+
+			.item {
+				text-align: center;
+				margin-right: 30upx;
+				padding: 10upx;
+			}
+
+			.name {
+				font-size: 28upx;
+				color: #666;
+				padding-top: 10upx;
+			}
+
+			image {
+				width: 100upx;
+				height: 100upx;
+			}
+		}
+	}
+	//表情包样式end
+
+  //底部样式start
+  .bottom {
+  	position: fixed;
+  	bottom: 0;
+  	left: 0;
+  	width: 100%;
+  	height: 100upx;
+  	background: #F7F7F7;
+  	display: flex;
+  	align-items: center;
+    z-index: 100;
+    .prohibit{
+      width: 100%;
+      color: #999;
+      font-size: 28upx;
+      background-color: #f8f8f8;
+      text-align: center;
+      border: 1px solid #999;
+      border-radius: 3px;
+      padding: 10upx 0;
+    }
+  	image{
+  		width: 56upx;
+  		height: 56upx;
+  		margin-left: 32upx;
+  	}
+
+  	// image:nth-of-type(2) {
+  	// 	width: 46upx;
+  	// 	height: 46upx;
+  	// 	margin-left: 32upx;
+  	// }
+
+  	input {
+  		width: 404upx;
+  		height: 72upx;
+  		background: #fff;
+  		border-radius: 36upx;
+  		padding-left: 36upx;
+  		margin-left: 36upx;
+  		margin-right: 30upx;
+  	}
+    .input{
+      width: 404upx;
+      height: 72upx;
+      background: #fff;
+      font-size: 28upx;
+      line-height: 72upx;
+      padding-left: 36upx;
+      margin-left: 36upx;
+      margin-right: 30upx;
+    }
+
+  	text {
+  		height: 40upx;
+  		font-size: 28upx;
+  		font-family: PingFang SC;
+  		font-weight: 500;
+  		color: #00B68D;
+      margin-left: 32upx;
+  	}
+  }
+  .bottom-prohibit{
+    padding:0 30upx;
+  }
+  //底部样式end
+
+	// .content {
+ //    position: fixed;
+ //    top: 0;
+ //    left: 0;
+ //    right: 0;
+ //    bottom: 0;
+ //    width: 100%;
+ //    background-color: #F2F2F2;
+ //    // border-top: 1px solid #EEEEEE;
+ //    .cbc-scrool{
+ //      position: fixed;
+ //      top: 0;
+ //      left: 0;
+ //      right: 0;
+ //      bottom:  100upx;
+ //      width: 100%;
+ //      padding: 0 32upx;
+ //      // height: calc(100vh - 100upx);
+ //    }
+	// }
+  .cbc-scrool{
+    position: fixed;
+    left: 0;
+    right: 0;
+    width: calc(100% - 40upx);
+	margin: 0 20rpx;
+    background-color: #F2F2F2;
+    height: calc(100vh - 100rpx);
+  }
+  
+
+  .recordPop{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,.3);
+    .rp-main{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      background: rgba(0,0,0,.6);
+      padding: 60upx 90upx;
+      border-radius: 5px;
+      text-align: center;
+      .rpm-text{
+        color: #fff;
+        font-size: 28upx;
+        margin-top: 40upx;
+      }
+      image{
+        width: 120upx;
+        height: 120upx;
+      }
+    }
+  }
+
+	.chat-time {
+		text-align: center;
+		text {
+			font-size: 24upx;
+			font-family: PingFang SC;
+			font-weight: 400;
+			line-height: 42upx;
+			padding: 4upx 12upx;
+			color: #fff;
+			background: #D0D0D0;
+			border-radius: 8upx;
+		}
+	}
+
+	.chat-box {
+
+    .cb-main{
+      padding-bottom: 30upx;
+    }
+		.chat-row {
+			display: flex;
+			padding-top: 40upx;
+			width: 100%;
+
+			.chat-img {
+				// width: 90upx;
+				flex-shrink: 0;
+
+				image {
+					width: 76upx;
+					height: 76upx;
+					border-radius: 8px;
+				}
+			}
+      .cr-box{
+        margin-left: 14upx;
+        .crb-name{
+          color: #666666;
+          font-size: 22upx;
+          padding-bottom: 12upx;
+        }
+        .chat-txt {
+          background: #fff!important;
+          line-height: 40upx;
+          font-size: 28upx;
+          font-family: PingFang SC;
+          padding: 18upx 30upx 18upx 28upx;
+          border-radius: 6upx;
+          position: relative;
+          color: #333333;
+          &::after{
+            content: '';
+              width: 0px;
+              height: 0px;
+              border-top: 5px solid transparent;
+              border-bottom: 5px solid transparent;
+              border-right: 5px solid #fff;
+              position: absolute;
+              top: 15px;
+              left: -5px;
+          }
+          image {
+			  width: 200upx;
+            height: 300upx;
+          }
+
+          .record{
+            display: inline-block;
+            vertical-align: middle;
+            width: 30upx;
+            // height: 40upx;
+          }
+          .time{
+            display: inline-block;
+            vertical-align: middle;
+            margin-left: 20upx;
+          }
+
+          &.no_bj {
+			  height: 340upx;
+            background-color: #F1F1F1!important;
+			
+          }
+		  &.voice_box {
+			  height: 80rpx;
+		  }
+        }
+		.chat-txt.no_bj::after {
+			border: 0!important;
+		}
+        .chat-txt3{
+          .money{
+            height: 190upx;
+          }
+          .money1{
+            background-image: url(/static/ye_icon/10994.png);
+          }
+          .money2{
+            background-image: url(/static/ye_icon/10995.png);
+          }
+          .money-mark{
+            margin-top: 38upx;
+            color: #FFFFFF;
+          }
+        }
+        .chat-txt4{
+          .money{
+            height: 170upx;
+          }
+          .money1{
+            background-image: url(/static/ye_icon/10998.png);
+          }
+          .money2{
+            background-image: url(/static/ye_icon/10999.png);
+          }
+          .money-mark{
+            margin-top: 32upx;
+            color: #333;
+          }
+        }
+        .chat-txt3,.chat-txt4{
+          max-width: 70%;
+          line-height: 40upx;
+          font-size: 28upx;
+          font-family: PingFang SC;
+          font-weight: 400;
+          border-radius: 6upx;
+          word-wrap: break-word;
+          word-break: break-all;
+          position: relative;
+          margin-right: 14upx;
+
+          .money{
+            width: 440upx;
+            background-size: 100% 100%;
+            display: flex;
+            flex-direction: column;
+            .money-content{
+               margin-left: 120upx;
+               margin-top: 27upx;
+               height: 42upx;
+               font-size: 30upx;
+               font-family: PingFang SC;
+               font-weight: 500;
+               line-height: 42upx;
+               color: #FFF;
+               image{
+                 width: 32upx;
+                 height: 26upx;
+                 margin-right: 8upx;
+               }
+            }
+            .money-num{
+              display: flex;
+              align-items: center;
+              margin-left: 120upx;
+              margin-top: 3upx;
+              image{
+                width: 32upx;
+                height: 26upx;
+                margin-right: 8upx;
+              }
+              text{
+                height: 33upx;
+                font-size: 24upx;
+                font-family: PingFang SC;
+                font-weight: 500;
+                line-height: 33upx;
+                color: #FFFFFF;
+              }
+            }
+            .money-mark{
+              margin-left: 30upx;
+              height: 28upx;
+              font-size: 20upx;
+              font-family: PingFang SC;
+              font-weight: 400;
+              line-height: 28upx;
+            }
+          }
+        }
+      }
+		}
+
+		.chat-row.me {
+			flex-direction: row-reverse;
+      // font-size: 0;
+			.chat-img {
+				margin-left: 10upx;
+			}
+
+			.chat-txt {
+        color: #fff;
+				max-width: 70%;
+				background: #0582FB!important;
+        line-height: 40upx;
+        font-size: 28upx;
+        font-family: PingFang SC;
+        font-weight: 400;
+        padding: 18upx 28upx 18upx 30upx;
+        border-radius: 6upx;
+				word-wrap: break-word;
+				word-break: break-all;
+        position: relative;
+        margin-right: 14upx;
+        &::after{
+          content: '';
+            width: 0px;
+            height: 0px;
+            border-top: 5px solid transparent;
+            border-bottom: 5px solid transparent;
+            border-left: 5px solid #0582FB;
+            border-right: inherit;
+            position: absolute;
+            top: 15px;
+            right: -5px;
+            left: inherit;
+        }	
+				image {
+					height: 300upx;
+					width: 200upx;
+				}
+        .record{
+          display: inline-block;
+          vertical-align: middle;
+          width: 30upx;
+          // height: 40upx;
+        }
+        .time{
+          display: inline-block;
+          vertical-align: middle;
+          margin-left: 20upx;
+        }
+
+				&.no_bj {
+					height: 340upx;
+					background-color: #F1F1F1!important;
+				}
+			}
+	.chat-txt.no_bj::after {
+		border: 0!important;
+	}
+      .chat-txt3{
+        .money{
+          height: 190upx;
+        }
+        .money1{
+          background-image: url(/static/ye_icon/10996.png);
+        }
+        .money2{
+          background-image: url(/static/ye_icon/10995.png);
+        }
+        .money-mark{
+          margin-top: 38upx;
+          color: #FFFFFF;
+        }
+      }
+      .chat-txt4{
+        .money{
+          height: 170upx;
+        }
+        .money1{
+          background-image: url(/static/ye_icon/11000.png);
+        }
+        .money2{
+          background-image: url(/static/ye_icon/11001.png);
+        }
+        .money-mark{
+          margin-top: 32upx;
+          color: #333;
+        }
+      }
+      .chat-txt3,.chat-txt4{
+        max-width: 70%;
+        line-height: 40upx;
+        font-size: 28upx;
+        font-family: PingFang SC;
+        font-weight: 400;
+        border-radius: 6upx;
+        word-wrap: break-word;
+        word-break: break-all;
+        position: relative;
+        margin-right: 14upx;
+
+        .money{
+          width: 440upx;
+          background-size: 100% 100%;
+          display: flex;
+          flex-direction: column;
+          .money-content{
+             margin-left: 120upx;
+             margin-top: 27upx;
+             height: 42upx;
+             font-size: 30upx;
+             font-family: PingFang SC;
+             font-weight: 500;
+             line-height: 42upx;
+             color: #FFF;
+             image{
+               width: 32upx;
+               height: 26upx;
+               margin-right: 8upx;
+             }
+          }
+          .money-num{
+            display: flex;
+            align-items: center;
+            margin-left: 120upx;
+            margin-top: 3upx;
+            image{
+              width: 32upx;
+              height: 26upx;
+              margin-right: 8upx;
+            }
+            text{
+              height: 33upx;
+              font-size: 24upx;
+              font-family: PingFang SC;
+              font-weight: 500;
+              line-height: 33upx;
+              color: #FFFFFF;
+            }
+          }
+          .money-mark{
+            margin-left: 30upx;
+            height: 28upx;
+            font-size: 20upx;
+            font-family: PingFang SC;
+            font-weight: 400;
+            line-height: 28upx;
+          }
+        }
+      }
+
+		}
+    .system{
+      padding-top: 60upx;
+      text-align: center;
+      text{
+        background-color: #e4e4e4;
+        padding: 10upx 20upx;
+        border-radius: 8px;
+      }
+
+    }
+	}
+
+  // 领取红包start
+  .packet{
+    width: 600upx;
+    height: 900upx;
+    position: relative;
+    .packet-mian{
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      height: 85%;
+      .packet-back-img{
+        position: absolute !important;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: 100%;
+      }
+      .packet-name{
+        margin-top: 176upx;
+        z-index: 100;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        image{
+          width: 44upx;
+          height: 44upx;
+          border-radius: 50%;
+          margin-right: 8rpx;
+        }
+        text{
+          height: 50upx;
+          font-size: 36upx;
+          font-family: PingFang SC;
+          font-weight: 400;
+          line-height: 50upx;
+          color: #FFE2B1;
+        }
+      }
+      .packet-content{
+        z-index: 100;
+        margin-top: 25upx;
+        height: 62upx;
+        font-size: 44upx;
+        font-family: PingFang SC;
+        font-weight: bold;
+        line-height: 62upx;
+        color: #FFE2B1;
+        text-align: center;
+      }
+      .packet-num{
+        display: flex;
+        justify-content:center;
+        align-items: center;
+        z-index: 100;
+        margin-top: 48upx;
+        align-items: center;
+        image{
+          width: 52upx;
+          height: 42upx;
+          margin-right: 13upx;
+        }
+        text{
+          height: 78upx;
+          font-size: 56upx;
+          font-family: PingFang SC;
+          font-weight: 500;
+          line-height: 78upx;
+          color: #FFE2B1;
+        }
+      }
+    }
+    .packet-close{
+       margin-top: 65upx;
+       text-align: center;
+       image{
+         width: 40upx;
+         height: 40upx;
+       }
+    }
+  }
+  //领取红包end
+
+
+//红包派送完了start
+.packet-none{
+    width: 600upx;
+    height: 900upx;
+    position: relative;
+    .packet-mian{
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      height: 85%;
+      .packet-back-img{
+        position: absolute !important;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: 100%;
+      }
+      .packet-name{
+        margin-top: 176upx;
+        z-index: 100;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        image{
+          width: 44upx;
+          height: 44upx;
+          border-radius: 50%;
+          margin-right: 8rpx;
+        }
+        text{
+          height: 50upx;
+          font-size: 36upx;
+          font-family: PingFang SC;
+          font-weight: 400;
+          line-height: 50upx;
+          color: #FFE2B1;
+        }
+      }
+      .packet-content{
+        z-index: 100;
+        margin-top: 25upx;
+        height: 62upx;
+        font-size: 44upx;
+        font-family: PingFang SC;
+        font-weight: bold;
+        line-height: 62upx;
+        color: #FFE2B1;
+        text-align: center;
+      }
+      .packet-xq{
+        z-index: 100;
+        margin-top: 352upx;
+        text-align: center;
+        height: 50upx;
+        font-size: 36upx;
+        font-family: PingFang SC;
+        font-weight: 500;
+        line-height: 50upx;
+        color: #FFE2B1;
+      }
+    }
+    .packet-close{
+       margin-top: 100upx;
+       text-align: center;
+       image{
+         width: 40upx;
+         height: 40upx;
+       }
+    }
+  }
+  //红包派送完了end
